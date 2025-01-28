@@ -1,0 +1,172 @@
+/* Reset and Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+/* Navbar Styling */
+.navbar {
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: 600;
+  color: #5b5f97;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+}
+
+.navbar ul li {
+  margin-left: 20px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.navbar ul li:hover,
+.navbar ul .active {
+  color: #5b5f97;
+  text-decoration: underline;
+}
+
+/* Hero Section */
+.hero-section {
+  text-align: center;
+  padding: 100px 20px;
+  background: linear-gradient(135deg, #e0e7ff, #f4f4f9);
+}
+
+.hero-section h1 {
+  font-size: 2.8rem;
+  margin-bottom: 20px;
+}
+
+.hero-section h1 span {
+  color: #5b5f97;
+  font-weight: 600;
+}
+
+.hero-section p {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+/* Button Styling */
+.btn, .btn2 {
+  padding: 10px 20px;
+  margin-top: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 16px;
+}
+
+.btn {
+  background-color: #5b5f97;
+  color: white;
+  border: none;
+}
+
+.btn2 {
+  background-color: transparent;
+  color: #5b5f97;
+  border: 2px solid #5b5f97;
+}
+
+.btn:hover, .btn2:hover {
+  background-color: #4a4e87;
+  color: white;
+}
+
+/* Section Styling */
+section {
+  padding: 50px 100px;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #5b5f97;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Card Layout */
+.card-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  padding: 20px;
+  border-radius: 10px;
+  flex: 1 1 calc(30% - 20px);
+  min-width: 280px;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.card h3 {
+  color: #5b5f97;
+  margin-bottom: 10px;
+}
+
+.card p, .card ul li {
+  font-size: 15px;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .hero-section {
+    padding: 50px 20px;
+  }
+
+  section {
+    padding: 30px 20px;
+  }
+
+  .card-container {
+    flex-direction: column;
+  }
+
+  .card {
+    width: 100%;
+  }
+}
