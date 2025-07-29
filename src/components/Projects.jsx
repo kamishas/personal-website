@@ -49,13 +49,16 @@ const Projects = () => {
         <h2>💼 Work Experience</h2>
         <div className="card-container">
           <div className="card">
-            <h3>Associate Software Engineer</h3>
+            <h3> Software Engineer</h3>
             <p>Acrux IT Services | May 2021 – May 2023</p>
             <ul>
-              <li>Automated CI/CD pipelines using Jenkins & Docker, improving deployment efficiency by 40%.</li>
-              <li>Migrated legacy systems to AWS Cloud, enhancing scalability and performance.</li>
-              <li>Implemented OAuth 2.0 and JWT for enhanced security protocols.</li>
-              <li>Developed microservices architecture for scalable backend systems.</li>
+              <li>Contributed to the design and development of backend APIs using Flask and Node.js, supporting intelligent document parsing and
+                  validation workflows; improved system throughput by 40% through iterative performance tuning and logic refinement.</li>
+              <li>Collaborated with cross-functional teams to integrate MongoDB Atlas and Redis for efficient handling of large-scale content
+                  datasets, achieving a 35% improvement in API response times and increasing platform stability.</li>
+              <li>Actively engaged in Agile development cycles, addressing real-time production issues, reviewing peer code, and assisting with
+                  automated deployment via Docker and GitHub Actions, which reduced release time by 70% and improved delivery reliability.</li>
+              
             </ul>
           </div>
         </div>
